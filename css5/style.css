@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    background-color: #a0a0a0;
+    font-family: 'Lato', sans-serif;
+}
+#all{
+    margin:0 10px;
+    background-color: white;
+}
+#top-bar{
+    background-color: rgb(35,144,229);
+    color:white;
+    padding:7px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#top-bar h4,
+#top-bar ul li{
+    display: inline-block;
+    margin-right:15px;
+}
+#top-bar span{
+    vertical-align: middle;
+}
+#top-bar select{
+    background-color: rgb(35,144,229);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Protest Riot', sans-serif;
+
+}
+#main-menu{
+    display: flex;
+    padding:20px;
+    justify-content: space-around;
+    background-color: rgb(244,244,244);
+
+}
+#main-menu a{
+    text-decoration: none;
+    color:#101010;
+}
+#main-menu a:hover{
+    text-decoration: underline;
+}
+#main-menu li,
+#slider li{
+    display: inline-block;
+    margin:20px 10px;
+}
+#logo{
+    width:200px;
+    text-align: left;
+    font-size:2.3em;
+}
+#slider{
+    display: flex;
+    position: relative;
+    padding:20px;
+    margin: 20px 0;
+}
+#slider > div{
+    width:50%;
+    text-align: center;
+}
+#slider h2{
+    text-align: left;
+}
+#slider p{
+    text-align: justify;
+    line-height: 1.4em;
+}
+#buttons{
+    margin:20px auto;
+}
+#buttons a{
+    width:100px;
+    border:1px solid rgb(35,144,229);
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px gray;
+    display: inline-block;
+    padding:10px 30px;
+    margin:10px;
+}
+#buttons a:hover, #buttons .active{
+    background-color: rgb(35,144,229);
+    color:white;
+}
+#slider .right,#slider .left{
+    position: absolute;
+    width:20px;
+    height:20px;
+    background-color: rgb(35,144,229);
+}
+#slider .right{
+    right:0;
+    top:50%;
+}
+#slider .left{
+    left:0;
+    top:50%;
+}

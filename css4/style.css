@@ -1,0 +1,63 @@
+input[type="email"] + span{
+    display: none;
+    color:red;
+}
+input[type="email"]:invalid + span{
+   display: inline;
+}
+#main div > h2,
+#main div > h3
+{
+    color:rgb(182, 232, 182);
+    background-color: brown;
+    width:200px;
+    padding:10px;
+    transition-duration: 400ms;
+    
+}
+#main div > h3{
+    transform:scale(0.3);
+    background-color: blueviolet;
+    width:200px;
+    height: 200px;
+}
+
+#main div > h2:hover{
+    transform:translateX(200px);
+}
+.box{
+    width:100px;
+    height:100px;
+    margin:100px;
+    background-color: blue;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-name: move200;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+}
+.box:hover{
+    animation-name: m;
+}
+@keyframes m{
+
+}
+@keyframes move200 {
+    0%{
+        background-color: brown;
+
+    }
+    30%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+        transform: rotateY(180deg);
+    }
+    100%{
+        background-color: yellow;
+        border-radius: 50%;
+
+        transform:translate(200px,-200px);
+    }
+}

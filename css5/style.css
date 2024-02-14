@@ -1,3 +1,8 @@
+:root{
+    --primary-color:rgb(35,144,229);
+    --link-color:rgb(80,80,80);
+    --botton-width:100px;
+}
 *{
     margin: 0;
 	padding: 0;
@@ -6,6 +11,10 @@
 	font: inherit;
 	vertical-align: baseline;
 }
+option{
+    color:white;
+}
+
 body{
     background-color: #a0a0a0;
     font-family: 'Lato', sans-serif;
@@ -15,7 +24,7 @@ body{
     background-color: white;
 }
 #top-bar{
-    background-color: rgb(35,144,229);
+    background-color: var(--primary-color);
     color:white;
     padding:7px 20px;
     display: flex;
@@ -30,7 +39,7 @@ body{
     vertical-align: middle;
 }
 #top-bar select{
-    background-color: rgb(35,144,229);
+    background-color: var(--primary-color);
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Protest Riot', sans-serif;
@@ -46,6 +55,9 @@ h1,h2,h3,h4,h5,h6{
 #main-menu a{
     text-decoration: none;
     color:#101010;
+}
+#main-menu .menu-btn{
+    display: none;
 }
 #main-menu a:hover{
     text-decoration: underline;
@@ -67,7 +79,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 20px 0;
 }
 #slider > div{
-    width:50%;
+    width:100%;
     text-align: center;
 }
 #slider h2{
@@ -81,8 +93,8 @@ h1,h2,h3,h4,h5,h6{
     margin:20px auto;
 }
 #buttons a{
-    width:100px;
-    border:1px solid rgb(35,144,229);
+    width:var(--botton-width);
+    border:1px solid var(--primary-color);
     border-radius: 7px;
     box-shadow: 5px 5px 5px gray;
     display: inline-block;
@@ -90,14 +102,14 @@ h1,h2,h3,h4,h5,h6{
     margin:10px;
 }
 #buttons a:hover, #buttons .active{
-    background-color: rgb(35,144,229);
+    background-color: var(--primary-color);
     color:white;
 }
 #slider .right,#slider .left{
     position: absolute;
     width:20px;
     height:20px;
-    background-color: rgb(35,144,229);
+    background-color: var(--primary-color);
 }
 #slider .right{
     right:0;
@@ -106,4 +118,39 @@ h1,h2,h3,h4,h5,h6{
 #slider .left{
     left:0;
     top:50%;
+}
+@media screen and (max-width:640px){
+    #slider, #main-menu{
+        flex-wrap: wrap;
+    }
+    #top-bar{
+        flex-direction: column;
+    }
+    #top-bar > div{
+        border-bottom: 1px solid white;
+        margin-bottom: 5px;
+    }
+    #top-bar ul li{
+        display: block;
+    }
+    #main-menu{
+        position: relative;
+    }
+    #main-menu ul{
+        display: none;
+    }
+    #main-menu .menu-btn{
+        display: block;
+        cursor: pointer;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    #main-men input{
+        width:200px;
+        border: 2px solid red;
+        position:absolute;
+        left:0;
+        top:0;
+    }
 }

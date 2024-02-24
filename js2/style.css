@@ -1,0 +1,10 @@
+table, td{
+    padding:5px;
+    border:1px solid gray;
+    
+}
+.header{
+    background-color: black;
+    color:wheat;
+    padding: 10px;
+}

@@ -1,0 +1,25 @@
+h1{
+    font-size: 40px;
+    color:black;
+}
+h1 > .small{
+    color:brown;
+}
+.m{
+    transform: rotate(-30deg);
+    transition-duration: 400ms;
+    display: inline-block;
+}
+.error{
+    color:red;
+}
+.highlight{
+    text-decoration: line-through;
+    background-color: yellow;
+}
+.link{
+    cursor: pointer;
+}
+.bo{
+    font-size:1.3em;
+}

@@ -1,0 +1,23 @@
+#countries-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+#loading{
+    visibility: none;
+}
+#countries-content div{
+    width:45%;
+    background-color: goldenrod;
+    padding: 25px;
+}
+
+#content{
+    display: flex;
+    gap: 20;    
+}
+#countries li{
+    font-size: 22px;    
+}
+#countries li img{
+    max-height: 30px;
+}

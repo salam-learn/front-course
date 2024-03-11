@@ -1,0 +1,21 @@
+#slider{
+    width: 60%;
+    margin:50px auto;
+    max-height: 200px;
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 15px;
+position:absolute;
+bottom:-130px;
+
+}
+.first{
+    background-color: brown;
+    color:wheat;
+}
+.second{
+    background-color: blueviolet;
+    color:wheat;
+
+}
